@@ -1,0 +1,138 @@
+body {
+    background: #fafafa;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+#mainContent {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.recurso {
+    cursor: grab;
+    user-select: none;
+}
+
+.recurso.movido {
+    background: #fff8e1;
+}
+
+.recurso .asa {
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.recurso .posicion {
+    min-width: 2.2rem;
+}
+
+.recurso .icono {
+    font-size: 1.3rem;
+    width: 1.5rem;
+    text-align: center;
+    cursor: help;
+}
+
+.recurso .icono.dicc:not(.spinner-border) {
+    cursor: pointer;
+}
+
+.recurso .icono.spinner-border {
+    font-size: 0;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.25rem;
+}
+
+.recurso .flechas .btn {
+    padding: 0 0.4rem;
+    line-height: 1.1;
+}
+
+.fantasma {
+    opacity: 0.4;
+    background: #e2eefd;
+}
+
+.sortable-fallback {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leyenda span {
+    margin-right: 1.25rem;
+    white-space: nowrap;
+}
+
+.buscainst-wrapper {
+    width: 100%;
+    margin: 0 0 2rem 0;
+}
+
+.buscainst-wrapper div {
+    width: 100%;
+}
+
+#buscainst {
+    width: 100%;
+    height: 40px;
+    padding: 0 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+#buscainst::placeholder {
+    color: #7a7a7a;
+}
+
+#buscainst:hover {
+    border-color: #4a4a4a;
+}
+
+#buscainst:focus {
+    border-color: #6a6a6a;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.autocomplete ul {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+    border: 1px solid #2f2f2f;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.autocomplete li {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.autocomplete li mark {
+    background: none;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#stata {
+    position: fixed;
+    bottom: 0;
+    margin-left: 2rem;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordenador de recursos</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="mainContent">
+          <h1>Ordenador de recursos</h1>
+          <p>Esta herramienta permite revisar los recursos de un conjunto de datos en la PNDA y cambiar el orden en el que se muestran. Solo modifica el orden; no cambia ningún otro dato.</p>
+          <div id="validacion" class="mt-5">
+            <h3>Validación</h3>
+            <label for="apikey" class="form-label mt-2">Introduce tu APIkey (necesaria para guardar el orden):</label>
+            <input type="password" class="form-control" id="apikey">
+          </div>
+          <div id="seleccion" class="mt-5">
+            <h3>Selección de conjunto</h3>
+            <div class="buscainst-wrapper mt-4">
+              <label for="buscainst" class="form-label mt-2">Busca una institución para explorar sus conjuntos de datos:</label>
+              <input type="text" id="buscainst" placeholder="Busca una institución..." autocomplete="off">
+            </div>
+            <div id="conjuntos" class="mt-4"></div>
+          </div>
+          <div id="recursos" class="mt-4 mb-5"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-2 text-muted" id="stata">
+      <p>
+        <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+        <span><strong id="status"></strong></span>
+      </p>
+    </div>
+    <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container"></div>
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>
