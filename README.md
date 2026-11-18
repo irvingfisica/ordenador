@@ -2,6 +2,27 @@
 
 Herramienta para revisar y cambiar el orden en que se muestran los recursos de un conjunto de datos en la PNDA (datos.gob.mx). Funciona como aplicación independiente construida en Rust con Tauri, igual que `diccionarios` y `validador`.
 
+## Versiones instalables
+Todas las versiones serán detectadas como inseguras por el sistema operativo pues no están firmadas.
+
+### Windows:
+
+- [x64-nsis](https://github.com/irvingfisica/ordenador/releases/download/v1.0.0/ordenador_1.0.0_x64-setup.exe)
+
+- [x64-msi](https://github.com/irvingfisica/ordenador/releases/download/v1.0.0/ordenador_1.0.0_x64_en-US.msi)
+
+### Mac:
+
+- [x64-dmg](https://github.com/irvingfisica/ordenador/releases/download/v1.0.0/ordenador_1.0.0_x64.dmg)
+
+### Linux:
+
+- [x86_64-rpm](https://github.com/irvingfisica/ordenador/releases/download/v1.0.0/ordenador-1.0.0-1.x86_64.rpm)
+
+- [amd64-AppImage](https://github.com/irvingfisica/ordenador/releases/download/v1.0.0/ordenador_1.0.0_amd64.AppImage)
+
+- [amd64-deb](https://github.com/irvingfisica/ordenador/releases/download/v1.0.0/ordenador_1.0.0_amd64.deb)
+
 ## Qué hace
 
 1. Se busca una institución y se elige uno de sus conjuntos.
